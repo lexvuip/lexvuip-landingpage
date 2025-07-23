@@ -11,10 +11,10 @@ function AboutSection() {
 						Protecting What Matters Most, For Over 20 Years
 					</h2>
 					<p className="about-description">
-						We are a full-service law firm committed to providing strategic,
-						results-driven legal representation. Whether you’re facing a
-						business dispute or a personal challenge, our team stands ready to
-						protect your rights and advocate for your future.
+						At LexvuIP, we specialize in delivering high-quality patent drawings and design services tailored for inventors, law firms, and enterprises around the world. Our mission is simple — to turn your ideas into professionally crafted, USPTO-compliant illustrations that protect your innovation and showcase your vision with clarity.
+					</p>
+					<p className='about-description'>
+						With a deep understanding of Intellectual Property standards and regulations, we go beyond just creating drawings — we offer strategic visual communication that speaks the language of patent examiners.
 					</p>
 					<div className="about-actions">
 						<button className="about-contact-btn" onClick={() => window.location.href = '/contact'}>Get In Touch</button>

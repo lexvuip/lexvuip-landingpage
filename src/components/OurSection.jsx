@@ -6,40 +6,40 @@ const services = [
 		number: 1,
 		title: (
 			<>
-				Criminal <em>Defense</em>
+				Utility <em>Patent Drawings</em>
 			</>
 		),
 		description:
 			'Our attorneys bring decades of criminal defense experience to defend your rights, challenge evidence, and build a strategic case',
 		image:
 			'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80',
-		alt: 'Criminal Defense',
+		alt: 'Utility Patent Drawings',
 	},
 	{
 		number: 2,
 		title: (
 			<>
-				Intellectual <em>Property</em>
+				Design <em>Patent Illustrations</em>
 			</>
 		),
 		description:
 			'We help you secure, protect, and enforce your intellectual property rights, from patents to trademarks and copyrights.',
 		image:
 			'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
-		alt: 'Intellectual Property',
+		alt: 'Design Patent Illustrations',
 	},
 	{
 		number: 3,
 		title: (
 			<>
-				Business <em>Law</em>
+				Provisional <em>Patent Sketches</em>
 			</>
 		),
 		description:
 			'From contracts to compliance, our business law team provides guidance and representation for companies of all sizes.',
 		image:
 			'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
-		alt: 'Business Law',
+		alt: 'Provisional Patent Sketches',
 	},
 ];
 

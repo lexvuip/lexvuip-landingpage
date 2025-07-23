@@ -3,30 +3,35 @@ import '../styles/FAQSection.css';
 
 const faqs = [
 	{
-		question: 'What should I expect during my first consultation?',
+		question: 'What type of patent drawings do you provide?',
 		answer:
-			'During your first consultation, we will discuss your legal needs, review your case, and outline possible next steps. Our goal is to provide clarity and guidance.',
+			'We provide Utility, Design, Provisional, and Trademark patent drawings, fully compliant with USPTO and WIPO guidelines. From simple flowcharts to complex mechanical illustrations — we’ve got it covered.',
 	},
 	{
-		question: 'How are legal fees structured?',
+		question: 'How do I start a project with LexvuIP?',
 		answer:
-			'Legal fees may be hourly, flat-rate, or contingency-based, depending on your case. We will explain all costs up front so there are no surprises.',
+			'Simply share your idea in any format — sketch, CAD file, PDF, or even a photo. We’ll review and provide a timeline and quote. Once approved, we start illustrating.',
 	},
 	{
-		question: 'Do I need an attorney for small legal issues?',
+		question: 'How long does it take to complete a drawing?',
 		answer:
-			'Even small legal issues can have big consequences. Consulting an attorney ensures your rights are protected and you make informed decisions.',
+			'Most projects are delivered within 2–4 business days, depending on the complexity. We also offer express service for urgent requests.',
 	},
 	{
-		question: 'What types of business entities can you help with?',
+		question: 'What file formats do you accept and deliver?',
 		answer:
-			'We assist with LLCs, corporations, partnerships, and more. Our team can guide you in choosing and forming the right entity for your needs.',
+			'We accept sketches, hand-drawn scans, CAD, PPT, or even rough diagrams. Final files are delivered in PDF, TIFF, and DOC formats — ready for direct patent office submission.',
 	},
 	{
-		question: 'Can you help in a contract dispute?',
+		question: 'Do you sign NDAs or keep client data confidential?',
 		answer:
-			'Yes, we have extensive experience resolving contract disputes through negotiation, mediation, or litigation as needed.',
+			'Absolutely. Confidentiality is our top priority. We’re happy to sign NDAs and ensure your innovation remains secure throughout the process.',
 	},
+	{
+		question: 'How do you price your services?',
+		answer:
+			"Our pricing depends on the type and complexity of the drawings. We offer transparent and competitive rates, with no hidden costs. You’ll always know what you're paying for.",
+	}
 ];
 
 const avatars = [
@@ -48,11 +53,11 @@ function FAQSection() {
 						Questions
 					</h2>
 					<div className="faq-desc">
-						Anything else you’d like to know? Get in touch with our sales team
+						Anything else you’d like to know? Get in touch with our team
 						and we’d be happy to discuss your questions.
 					</div>
 					<button className="faq-contact-btn" onClick={() => window.location.href = '/contact'}>
-						Talk to a Lawyer <span className="faq-arrow">→</span>
+						Get In Touch <span className="faq-arrow">→</span>
 					</button>
 					<div className="faq-avatars">
 						{avatars.map((src, idx) => (
