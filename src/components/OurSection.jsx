@@ -38,7 +38,7 @@ const services = [
 		description:
 			'From contracts to compliance, our business law team provides guidance and representation for companies of all sizes.',
 		image:
-			'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
+			'https://unsplash.com/photos/chair-parts-chart-hanging-on-wall-Mpq0LddqiTk',
 		alt: 'Provisional Patent Sketches',
 	},
 ];

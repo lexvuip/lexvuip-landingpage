@@ -40,7 +40,7 @@ function AboutSection() {
 					<div className="about-stat-label">Client Satisfaction Rate</div>
 				</div>
 				<div className="about-stat">
-					<div className="about-stat-value">20+ Yr</div>
+					<div className="about-stat-value">25+ Yr</div>
 					<div className="about-stat-label">
 						Serving Individuals & Businesses
 					</div>
