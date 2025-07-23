@@ -45,7 +45,7 @@ const services = [
 
 function OurSection() {
 	return (
-		<section className="our-section">
+		<section id="services" className="our-section">
 			<div className="our-container">
 				<div className="our-label">Our Services</div>
 				<h2 className="our-title">

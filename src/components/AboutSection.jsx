@@ -3,7 +3,7 @@ import '../styles/AboutSection.css';
 
 function AboutSection() {
 	return (
-		<section className="about-section">
+		<section id="about" className="about-section">
 			<div className="about-container">
 				<div className="about-content">
 					<div className="about-label">About Us</div>
@@ -17,7 +17,7 @@ function AboutSection() {
 						protect your rights and advocate for your future.
 					</p>
 					<div className="about-actions">
-						<button className="about-contact-btn">Get In Touch</button>
+						<button className="about-contact-btn" onClick={() => window.location.href = '/contact'}>Get In Touch</button>
 					</div>
 				</div>
 			</div>

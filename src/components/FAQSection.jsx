@@ -39,7 +39,7 @@ function FAQSection() {
 	const [openIdx, setOpenIdx] = useState(null);
 
 	return (
-		<section className="faq-section">
+		<section id="faq" className="faq-section">
 			<div className="faq-container">
 				<div className="faq-left">
 					<h2 className="faq-heading">
@@ -51,7 +51,7 @@ function FAQSection() {
 						Anything else you’d like to know? Get in touch with our sales team
 						and we’d be happy to discuss your questions.
 					</div>
-					<button className="faq-contact-btn">
+					<button className="faq-contact-btn" onClick={() => window.location.href = '/contact'}>
 						Talk to a Lawyer <span className="faq-arrow">→</span>
 					</button>
 					<div className="faq-avatars">

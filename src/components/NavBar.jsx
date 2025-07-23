@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/NavBar.css';
 
 function NavBar() {
 	const [scrolled, setScrolled] = useState(false);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -21,18 +23,22 @@ function NavBar() {
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
+	
+	const handleContactClick = () => {
+		navigate('/contact');
+	};
 
 	return (
 		<nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-			<div className="navbar-logo">LexvuIP</div>
+			<Link to="/" className="navbar-logo">LexvuIP</Link>
 			<ul className="navbar-links">
-				<li>Home</li>
-				<li>Services</li>
-				<li>About</li>
-				<li>FAQ</li>
+				<li><Link to="/">Home</Link></li>
+				<li><a href="/#services">Services</a></li>
+				<li><a href="/#about">About</a></li>
+				<li><a href="/#faq">FAQ</a></li>
 			</ul>
 			<div className="navbar-contact">
-				<button className="contact-btn">Get In Touch <span className="faq-arrow">→</span></button>
+				<button className="contact-btn" onClick={handleContactClick}>Get In Touch <span className="faq-arrow">→</span></button>
 			</div>
 		</nav>
 	);
