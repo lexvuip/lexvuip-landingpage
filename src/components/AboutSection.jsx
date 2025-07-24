@@ -8,13 +8,19 @@ function AboutSection() {
 				<div className="about-content">
 					<div className="about-label">About Us</div>
 					<h2 className="about-title">
-						Protecting What Matters Most, For Over 20 Years
+						At LexVuIP, We Don’t Just Draw — We Strategize, Illustrate, and Deliver IP Confidence.
 					</h2>
 					<p className="about-description">
-						At LexvuIP, we specialize in delivering high-quality patent drawings and design services tailored for inventors, law firms, and enterprises around the world. Our mission is simple — to turn your ideas into professionally crafted, USPTO-compliant illustrations that protect your innovation and showcase your vision with clarity.
+						With over 25 years of specialized experience in Intellectual Property services, LexVuIP has been a trusted partner to IP attorneys, patent law firms, and corporate legal teams around the world.
 					</p>
 					<p className='about-description'>
-						With a deep understanding of Intellectual Property standards and regulations, we go beyond just creating drawings — we offer strategic visual communication that speaks the language of patent examiners.
+						We bring a deep understanding of global IP standards especially USPTO, EUIPO, and Indian Patent Office guidelines to every project. Our team of skilled illustrators and IP professionals delivers high-precision utility patent drawings, design patent illustrations, trademark representations, and end-to-end Indian patent and industrial design filing support.
+					</p>
+					<p className='about-description'>
+						Whether you're preparing a complex utility patent application or need fast-turnaround design drawings, we help you present your client’s innovation clearly, professionally, and in full compliance with international IP requirements.
+					</p>
+					<p className='about-description'>
+						At LexVuIP, we believe that your ideas deserve more than protection, they deserve strategic representation that strengthens your filing from the ground up.
 					</p>
 					<div className="about-actions">
 						<button className="about-contact-btn" onClick={() => window.location.href = '/contact'}>Get In Touch</button>
