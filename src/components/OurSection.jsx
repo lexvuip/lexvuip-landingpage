@@ -1,18 +1,22 @@
 import React from 'react';
 import '../styles/OurSection.css';
+import lawerImage from '../assets/stockimages/lawer.jpg';
+import utilityPatentDrawingImage from '../assets/stockimages/utilitypatentdrawing.jpg';
+import designPatentDrawingImage from '../assets/stockimages/desingpatentdrawing.jpg';
+import trademarkDesignImage from '../assets/stockimages/trademarkdesign.jpg';
+import customWorkflowImage from '../assets/stockimages/customworkflow.jpg';
 
 const services = [
 	{
 		number: 1,
 		title: (
 			<>
-				Precision <em>P Solutions, Built for Attorneys</em> Who Protect Innovation
+				Precision <em>IP Solutions, Built for Attorneys</em> Who Protect Innovation
 			</>
 		),
 		description:
 			'At LexVuIP, we understand that accuracy isn’t a luxury it’s a necessity. That’s why we deliver specialized intellectual property support services designed to meet the high standards of patent attorneys, IP law firms, and legal teams worldwide.',
-		image:
-			'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80',
+		image: lawerImage,
 		alt: 'Utility Patent Drawings',
 	},
 	{
@@ -24,9 +28,8 @@ const services = [
 		),
 		description:
 			'Expertly detailed technical patent illustrations for mechanical, electrical, chemical, and software inventions. Our drawings are fully compliant with USPTO, EPO, and other global patent office standards, ensuring smooth prosecution and clear examiner communication.',
-		image:
-			'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
-		alt: 'Design Patent Illustrations',
+		image: utilityPatentDrawingImage,
+		alt: 'Utility Patent Drawings',
 	},
 	{
 		number: 3,
@@ -37,9 +40,8 @@ const services = [
 		),
 		description:
 			'We create clean, high-resolution design patent illustrations that align with the exacting visual format requirements of design patent offices worldwide from the USPTO to the EUIPO and WIPO.',
-		image:
-			'https://unsplash.com/photos/chair-parts-chart-hanging-on-wall-Mpq0LddqiTk',
-		alt: 'Provisional Patent Sketches',
+		image: designPatentDrawingImage,
+		alt: 'Design Patent Illustrations',
 	},
 	{
 		number: 4,
@@ -50,9 +52,8 @@ const services = [
 		),
 		description:
 			'Professional trademark drawings and renderings, including wordmarks, logos, and stylized marks, formatted to meet global trademark office requirements for seamless registration.',
-		image:
-			'https://unsplash.com/photos/chair-parts-chart-hanging-on-wall-Mpq0LddqiTk',
-		alt: 'Provisional Patent Sketches',
+		image: trademarkDesignImage,
+		alt: 'Trademark Design',
 	},
 	{
 		number: 5,
@@ -63,9 +64,8 @@ const services = [
 		),
 		description:
 			'Have a unique workflow or firm-specific requirement? We seamlessly integrate into your team’s processes, delivering accurate, on-time IP support that meets your client’s expectations and yours.',
-		image:
-			'https://unsplash.com/photos/chair-parts-chart-hanging-on-wall-Mpq0LddqiTk',
-		alt: 'Provisional Patent Sketches',
+		image: customWorkflowImage,
+		alt: 'Custom Workflow',
 	},
 ];
 

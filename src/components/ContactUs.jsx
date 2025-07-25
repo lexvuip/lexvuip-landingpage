@@ -1,13 +1,17 @@
 import React from 'react';
 import '../styles/ContactUs.css';
+import contactHeaderBg from '../assets/stockimages/lawer.jpg';
 
 function ContactUs() {
 	return (
 		<section className="contact-section">
-			<div className="contact-container">
-				<div className="contact-header">
+			<div className="contact-header-bg" style={{ backgroundImage: `url(${contactHeaderBg})` }}>
+				<div className="contact-header-content">
 					<h1 className="contact-title">Let's Talk About <span className="contact-title-emphasis">Your Case</span></h1>
+					<button className="contact-header-btn">Talk to a Lawyer →</button>
 				</div>
+			</div>
+			<div className="contact-container">
 				<div className="contact-form-container">
 					<h2 className="contact-form-title">Send Us a Message</h2>
 					<p className="contact-form-description">
@@ -24,10 +28,10 @@ function ContactUs() {
 							<input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
 						</div>
 						<div className="form-group">
-							<input type="text" id="subject" name="subject" placeholder="Subject" required />
+							<input type="text" id="subject" name="subject" placeholder="Title of your project" required />
 						</div>
 						<div className="form-group">
-							<textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+							<textarea id="message" name="message" placeholder="Tell us more about your project" rows="5" required></textarea>
 						</div>
 						<button type="submit" className="submit-btn">Submit</button>
 					</form>

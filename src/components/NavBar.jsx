@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/NavBar.css';
 
-function NavBar() {
+function NavBar({ contactPage }) {
 	const [scrolled, setScrolled] = useState(false);
 	const navigate = useNavigate();
 
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY;
-			if (scrollPosition > 100) {
+			if (scrollPosition > 100 || contactPage) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);
@@ -22,14 +22,14 @@ function NavBar() {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [contactPage]);
 	
 	const handleContactClick = () => {
-		navigate('/contact');
+		nagigate('/contact');
 	};
 
 	return (
-		<nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+		<nav className={`navbar ${scrolled || contactPage ? 'scrolled' : ''}`}>
 			<Link to="/" className="navbar-logo">LexvuIP</Link>
 			<ul className="navbar-links">
 				<li><Link to="/">Home</Link></li>
