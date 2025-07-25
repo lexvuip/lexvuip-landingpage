@@ -9,7 +9,7 @@ function NavBar({ contactPage }) {
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY;
-			if (scrollPosition > 100 || contactPage) {
+			if (scrollPosition > 100) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);
@@ -29,7 +29,7 @@ function NavBar({ contactPage }) {
 	};
 
 	return (
-		<nav className={`navbar ${scrolled || contactPage ? 'scrolled' : ''}`}>
+		<nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
 			<Link to="/" className="navbar-logo">LexvuIP</Link>
 			<ul className="navbar-links">
 				<li><Link to="/">Home</Link></li>

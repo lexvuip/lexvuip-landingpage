@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/ContactUs.css';
 import contactHeaderBg from '../assets/stockimages/lawer.jpg';
+import FooterSection from '../components/FotterSection';
 
 function ContactUs() {
 	return (
@@ -35,7 +36,7 @@ function ContactUs() {
 						<button type="submit" className="submit-btn">Submit</button>
 					</form>
 				</div>
-				<div className="contact-info">
+				{/* <div className="contact-info">
 					<div className="info-item">
 						<h3>Address</h3>
 						<p>8027 Thomas Ave.<br />Plattsburgh, NY 12901</p>
@@ -52,15 +53,9 @@ function ContactUs() {
 						<h3>Office Hours</h3>
 						<p>Monday–Friday: 9:00 AM – 6:00 PM+</p>
 					</div>
-				</div>
-				<div className="contact-footer">
-					<h3 className="footer-title">Your Legal Experts</h3>
-					<div className="faq-dropdown">
-						<p>What should I expect during my first consultation?</p>
-						<span className="dropdown-arrow">▼</span>
-					</div>
-				</div>
+				</div> */}
 			</div>
+			<FooterSection />
 		</section>
 	);
 }
