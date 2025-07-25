@@ -8,14 +8,13 @@ function ContactUs() {
 			<div className="contact-header-bg" style={{ backgroundImage: `url(${contactHeaderBg})` }}>
 				<div className="contact-header-content">
 					<h1 className="contact-title">Let's Talk About <span className="contact-title-emphasis">Your Case</span></h1>
-					<button className="contact-header-btn">Talk to a Lawyer →</button>
 				</div>
 			</div>
 			<div className="contact-container">
 				<div className="contact-form-container">
 					<h2 className="contact-form-title">Send Us a Message</h2>
 					<p className="contact-form-description">
-						Tell us a little about your legal matter, and one of our attorneys will reach out to you shortly.
+						Tell us little more about your project.
 					</p>
 					<form className="contact-form">
 						<div className="form-group">

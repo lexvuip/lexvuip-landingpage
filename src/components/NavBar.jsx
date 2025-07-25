@@ -25,7 +25,7 @@ function NavBar({ contactPage }) {
 	}, [contactPage]);
 	
 	const handleContactClick = () => {
-		nagigate('/contact');
+		navigate('/contact');
 	};
 
 	return (

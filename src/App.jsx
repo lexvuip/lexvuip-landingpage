@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import AboutSection from './components/AboutSection';
 import OurSection from './components/OurSection';
 import FotterSection from './components/FotterSection';
@@ -11,6 +11,7 @@ import './styles/App.css';
 function AppContent() {
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
+  const navigate = useNavigate();
 
   return (
     <div className="App">
@@ -33,7 +34,7 @@ function AppContent() {
                   standards—we exceed expectations, every time.
                 </p>
                 <div className="hero-actions">
-                  <button className="hero-contact-btn" onClick={() => window.location.href = '/contact'}>Get In Touch</button>
+                  <button className="hero-contact-btn" onClick={() => navigate('/contact')}>Get In Touch</button>
                   <a href="#services" className="hero-services-link">
                     Our Services
                   </a>
