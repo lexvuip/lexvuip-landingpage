@@ -6,6 +6,7 @@ import TestimonialSection from './components/TestimonialSection';
 import NavBar from './components/NavBar';
 import FAQSection from './components/FAQSection';
 import ContactUs from './components/ContactUs';
+import AboutPage from './components/AboutPage';
 import './styles/App.css';
 
 function AppContent() {
@@ -15,7 +16,7 @@ function AppContent() {
 
   return (
     <div className="App">
-      <NavBar contactPage={isContactPage} />
+      <NavBar />
       <Routes>
         <Route path="/" element={
           <>
@@ -49,6 +50,7 @@ function AppContent() {
           </>
         } />
         <Route path="/contact" element={<ContactUs />} />
+					<Route path="/about" element={<AboutPage />} />
       </Routes>
     </div>
   );
