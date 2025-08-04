@@ -8,7 +8,7 @@ const faqs = [
 			'We provide Utility, Design, Provisional, and Trademark patent drawings, fully compliant with USPTO and WIPO guidelines. From simple flowcharts to complex mechanical illustrations — we’ve got it covered.',
 	},
 	{
-		question: 'How do I start a project with LexvuIP?',
+		question: 'How do I start a project with LexVuIP?',
 		answer:
 			'Simply share your idea in any format — sketch, CAD file, PDF, or even a photo. We’ll review and provide a timeline and quote. Once approved, we start illustrating.',
 	},
@@ -34,11 +34,11 @@ const faqs = [
 	}
 ];
 
-const avatars = [
-	'https://randomuser.me/api/portraits/women/44.jpg',
-	'https://randomuser.me/api/portraits/men/32.jpg',
-	'https://randomuser.me/api/portraits/women/68.jpg',
-];
+// const avatars = [
+// 	'https://randomuser.me/api/portraits/women/44.jpg',
+// 	'https://randomuser.me/api/portraits/men/32.jpg',
+// 	'https://randomuser.me/api/portraits/women/68.jpg',
+// ];
 
 function FAQSection() {
 	const [openIdx, setOpenIdx] = useState(null);
@@ -59,11 +59,11 @@ function FAQSection() {
 					<button className="faq-contact-btn" onClick={() => window.location.href = '/contact'}>
 						Get In Touch <span className="faq-arrow">→</span>
 					</button>
-					<div className="faq-avatars">
+					{/* <div className="faq-avatars">
 						{avatars.map((src, idx) => (
 							<img className="faq-avatar" src={src} alt="avatar" key={idx} />
 						))}
-					</div>
+					</div> */}
 				</div>
 				<div className="faq-right">
 					{faqs.map((faq, idx) => (

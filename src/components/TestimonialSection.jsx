@@ -2,25 +2,31 @@ import React, { useState, useEffect } from 'react';
 import '../styles/TestimonialSection.css';
 
 const testimonials = [
+	
 	{
-		name: 'Jane Doe',
-		text: 'LexvuIP provided exceptional service and made the legal process seamless. Highly recommend their expertise!',
+		title : '“Exceptional Quality & Compliance”',
+		name: 'Laura S.',
+		text: '“LexVuIP delivered drawings that were not only visually precise but perfectly aligned with USPTO and WIPO guidelines. Their team’s technical skill and IP knowledge gave our application a strong foundation. Working with them felt like gaining a strategic partner, not just a vendor.”',
 	},
 	{
-		name: 'John Smith',
-		text: 'Professional, knowledgeable, and always available to answer my questions. I felt truly supported throughout.',
+		title : '“Fast, Accurate, and Reliable”',
+		name: 'James K.',
+		text: '“We had a tight deadline for a utility patent filing and LexVuIP came through with speed and accuracy. Their drawings required no revisions — a rare feat. Communication was smooth, and their professionalism shone through every step. A team we trust completely.”',
 	},
 	{
-		name: 'Emily Chen',
-		text: 'Their attention to detail and dedication to my case was outstanding. I am grateful for their help!',
+		title : '“Trusted IP Experts”',
+		name: 'Priya N.',
+		text: '“LexVuIP has become our go-to for all IP illustration needs. Their knowledge of global standards is unmatched, and their attention to detail is outstanding. Whether for design or utility patents, they always deliver work that enhances our filings and impresses our clients.”',
 	},
 	{
-		name: 'Carlos Rivera',
-		text: 'A trustworthy team that goes above and beyond. I would not hesitate to work with them again.',
+		title : '“A Seamless Experience”',
+		name: 'Michael D.',
+		text: '“From the first interaction, LexVuIP’s process was clear, efficient, and highly professional. Their team understood our technical requirements and delivered elegant, standards-compliant drawings that elevated our submission. We’ve since partnered with them on multiple filings — and every time, the results are excellent.”',
 	},
 	{
-		name: 'Priya Patel',
-		text: 'Clear communication and excellent results. LexvuIP exceeded my expectations in every way.',
+		title : '“IP Visualization Done Right”',
+		name: 'Anita R.',
+		text: '“LexVuIP blends deep IP expertise with artistic precision. Their illustrations speak the language of both inventors and examiners. They not only meet global standards — they set them. For firms serious about IP protection, partnering with LexVuIP is a smart, strategic move.”',
 	},
 ];
 
@@ -90,8 +96,9 @@ function TestimonialSection() {
 								className="testimonial-card card-center"
 								key={`${testimonial.originalIndex}-${idx}`}
 							>
+								<h3>{testimonial.title}</h3>
 								<div className="testimonial-text">{testimonial.text}</div>
-								<div className="testimonial-name">- {testimonial.name}</div>
+								<div className="testimonial-name">— {testimonial.name}</div>
 							</div>
 						))}
 					</div>

@@ -38,12 +38,12 @@ function AboutSection() {
 			<div className="about-divider" />
 			<div className="about-stats-row">
 				<div className="about-stat">
-					<div className="about-stat-value">1200+</div>
-					<div className="about-stat-label">Projects Successfully Handled</div>
+					<div className="about-stat-value">1000+</div>
+					<div className="about-stat-label">IP Projects Successfully Delivered</div>
 				</div>
 				<div className="about-stat">
 					<div className="about-stat-value">98%</div>
-					<div className="about-stat-label">Client Satisfaction Rate</div>
+					<div className="about-stat-label">Client Satisfaction Worldwide</div>
 				</div>
 				<div className="about-stat">
 					<div className="about-stat-value">25+ Yr</div>
@@ -53,7 +53,7 @@ function AboutSection() {
 				</div>
 				<div className="about-stat">
 					<div className="about-stat-value">40+</div>
-					<div className="about-stat-label">Industries Represented</div>
+					<div className="about-stat-label">Technical Fields & Sectors Covered</div>
 				</div>
 			</div>
 			<div className="about-divider" />

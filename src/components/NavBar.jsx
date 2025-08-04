@@ -39,13 +39,14 @@ function NavBar() {
 
 	return (
 		<nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-			<Link to="/" className="navbar-logo">LexvuIP</Link>
+			<Link to="/" className="navbar-logo">LexVuIP</Link>
 			<ul className="navbar-links">
 				<li><Link to="/">Home</Link></li>
 				<li><a href="/#services">Services</a></li>
 				<li><Link to="/about">About</Link></li>
-								<li><a href="/#faq">FAQ</a></li>
-								<li><Link to="/contact">Contact Us</Link></li>
+				{/* <li><a href="/#about">About</a></li> */}
+				<li><a href="/#faq">FAQ</a></li>
+				<li><Link to="/contact">Contact Us</Link></li>
 
 			</ul>
 			<div className="navbar-contact">

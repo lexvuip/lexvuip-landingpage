@@ -75,8 +75,7 @@ function OurSection() {
 			<div className="our-container">
 				<div className="our-label">Our Services</div>
 				<h2 className="our-title">
-					Trusted Expertise across the all spectrum - tailored to your unique
-					needs.
+					“Strategic IP Solutions across the entire spectrum – crafted for your unique success.”
 				</h2>
 				<div className="our-services-list">
 					{services.map((service, idx) => (

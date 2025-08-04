@@ -14,7 +14,7 @@ function AboutPage() {
                 <p className="about-page-description">
                     For over 25 years, LexVuIP has empowered intellectual property attorneys with expert patent illustration and IP documentation services—enabling seamless filings, confident prosecution, and bulletproof compliance with global patent offices. From complex utility patents to intricate design and trademark filings, we help legal professionals worldwide present innovation with unmatched accuracy and clarity.
                 </p>
-                <button className="about-page-btn">Talk to a Lawyer →</button>
+                <button className="about-page-btn">Talk to our Experts →</button>
             </div>
             <div className="about-page-image-container">
                 <img src={lawyerImage} alt="Lawyer" className="about-page-image" />
@@ -33,17 +33,20 @@ function AboutPage() {
             </div>
             <div className="our-journey-right-column">
                 <h1 className="our-journey-title-large">
-                    Two Decades of Justice, One <span className="our-journey-emphasis">Client</span> at a Time
+                    Two Decades of Precision, One <span className="our-journey-emphasis">Patent</span> at a Time
                     <br />
-                    Fighting for Fairness in Every <span className="our-journey-emphasis">Courtroom</span>
+                    Advancing Innovation in Every <span className="our-journey-emphasis">Jurisdiction</span>
                 </h1>
                 <p className="our-journey-description">
-                    We started with one goal: make high-caliber legal counsel available to those who need it most. Today, our
-                    multidisciplinary team continues to fight for fairness, resolution, and lasting impact. What began as a small,
-                    focused practice in 2002 has grown into a leading law firm—trusted by individuals and companies alike to deliver
-                    outcomes that matter.
+                    What began as a niche patent illustration studio has evolved into a global partner for IP attorneys seeking clarity, compliance, and speed.
                 </p>
-                <button className="our-journey-btn">Talk to a Lawyer →</button>
+                <p className="our-journey-description">
+                    WFor over 25 years, LexVuIP has empowered patent law firms and corporate legal teams with world-class IP documentation—from high-precision utility and design patent drawings to global trademark representation.
+                </p>
+                <p className="our-journey-description">
+                    Trusted across the USPTO, EPO, EUIPO, and Indian Patent Office, our journey has always been rooted in one mission: to help legal professionals protect innovation with absolute confidence and accuracy.
+                </p>
+                <button className="our-journey-btn">Talk to our Experts →</button>
             </div>
         </section>
         <TestimonialSection />

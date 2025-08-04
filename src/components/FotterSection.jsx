@@ -6,7 +6,7 @@ function FotterSection() {
 		<footer className="footer-section">
 			<div className="footer-main-row">
 				<div className="footer-col footer-brand">
-					<div className="footer-logo">LexvuIP</div>
+					<div className="footer-logo">LexVuIP</div>
 					<div className="footer-tagline">
 						Precision in Every Line.
 						<br />
@@ -25,7 +25,7 @@ function FotterSection() {
 			</div>
 			<div className="footer-divider" />
 			<div className="footer-bottom-row">
-				<div className="footer-copyright">2025 LexvuIP, Inc.</div>
+				<div className="footer-copyright">2025 LexVuIP, Inc.</div>
 				<div className="footer-policies">
 					<span>Privacy Policy</span>
 					<span>Terms Of Service</span>

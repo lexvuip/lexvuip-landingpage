@@ -29,7 +29,7 @@ function AppContent() {
                 </h1>
                 <p className="hero-description">
                   Your ideas deserve more than just documentation—they deserve
-                  distinction. At LexvuIP, we transform concepts into powerful visuals
+                  distinction. At LexVuIP, we transform concepts into powerful visuals
                   that speak the language of protection. With a team of sharp-eyed
                   artists, engineers, and drafting pros, we don't just meet USPTO
                   standards—we exceed expectations, every time.

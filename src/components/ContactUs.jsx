@@ -13,42 +13,68 @@ function ContactUs() {
 		message: ''
 	});
 	const [message, setMessage] = useState('');
+	const [loading, setLoading] = useState(false); 
 
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		emailjs.send('gmail', 'template_YOUR_TEMPLATE_ID', formData, 'YOUR_PUBLIC_KEY')
-			.then((result) => {
-				console.log(result.text);
-				setMessage('Thank you for your message! We will get back to you shortly.');
-				setFormData({
-					fullName: '',
-					email: '',
-					phone: '',
-					subject: '',
-					message: ''
-				});
-			}, (error) => {
-				console.log(error.text);
-				setMessage('Failed to send message. Please try again later.');
+		setLoading(true);
+		setMessage('');
+
+		const webAppUrl = "https://script.google.com/macros/s/AKfycbyi7tB5BqBGbm1YnQwHL0qsAZ9Kku2fP7dyt4xcjO9XgdFlGyFNbzCle74mJ--9Jl4rYQ/exec";
+
+		const formEncoded = new URLSearchParams();
+		formEncoded.append("fullName", formData.fullName);
+		formEncoded.append("email", formData.email);
+		formEncoded.append("phone", formData.phone);
+		formEncoded.append("subject", formData.subject);
+		formEncoded.append("message", formData.message);
+
+		console.log(formEncoded);
+		
+
+		try {
+			await fetch(webAppUrl, {
+				method: 'POST',
+				mode: 'no-cors', // Needed for Google Apps Script
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded',
+				},
+				body: formEncoded.toString()
 			});
+
+			setMessage("Thank you! We'll be in touch.");
+			setFormData({
+				fullName: '',
+				email: '',
+				phone: '',
+				subject: '',
+				message: ''
+			});
+		} catch (error) {
+			console.error("Submission error:", error);
+			setMessage("Something went wrong. Please try again.");
+		} finally {
+			setLoading(false);
+		}
 	};
+
 	return (
 		<section className="contact-section">
 			<div className="contact-header-bg" style={{ backgroundImage: `url(${contactHeaderBg})` }}>
 				<div className="contact-header-content">
-					<h1 className="contact-title">Let's Talk About <span className="contact-title-emphasis">Your Case</span></h1>
+					<h1 className="contact-title">Let's Talk About <span className="contact-title-emphasis">Your IP Needs</span></h1>
 				</div>
 			</div>
 			<div className="contact-container">
 				<div className="contact-form-container">
 					<h2 className="contact-form-title">Send Us a Message</h2>
 					<p className="contact-form-description">
-						Tell us a little about your legal matter, and one of our attorneys will reach out to you shortly.
+						Tell us a little about your IP matter, and one of our specialists will reach out to you shortly.
 					</p>
 					<form className="contact-form" onSubmit={handleSubmit}>
 						<div className="form-group">
@@ -66,29 +92,33 @@ function ContactUs() {
 						<div className="form-group">
 							<textarea id="message" name="message" placeholder="Tell us more about your project" rows="5" required value={formData.message} onChange={handleChange}></textarea>
 						</div>
-						<button type="submit" className="submit-btn">Submit</button>
+						<button type="submit" className="submit-btn" disabled={loading}>
+							{loading ? 'Sending...' : 'Submit'}
+						</button>
+
 					</form>
 					{message && <p className="form-message">{message}</p>}
 				</div>
-				{/* <div className="contact-info">
+
+			</div>
+				<div className="contact-info">
 					<div className="info-item">
 						<h3>Address</h3>
-						<p>8027 Thomas Ave.<br />Plattsburgh, NY 12901</p>
+						<p>6260 139th AVE.<br />NE 66 Redmond, WA 98052</p>
 					</div>
 					<div className="info-item">
 						<h3>Phone</h3>
-						<p>(612) 123-4456 78</p>
+						<p>Available Soon</p>
 					</div>
 					<div className="info-item">
 						<h3>Email</h3>
-						<p>J&Group@legal.com</p>
+						<a href="mailto:inbox.lexvuip@gmail.com?subject=New Inquiry" className='contact_link'>inbox.lexvuip@gmail.com</a >
 					</div>
 					<div className="info-item">
 						<h3>Office Hours</h3>
-						<p>Monday–Friday: 9:00 AM – 6:00 PM+</p>
+						<p>Available Soon</p>
 					</div>
-				</div> */}
-			</div>
+				</div>
 			<FooterSection />
 		</section>
 	);
