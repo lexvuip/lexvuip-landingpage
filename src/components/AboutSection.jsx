@@ -14,7 +14,7 @@ function AboutSection() {
 						With over 25 years of specialized experience in Intellectual Property services, LexVuIP has been a trusted partner to IP attorneys, patent law firms, and corporate legal teams around the world.
 					</p>
 					<p className='about-description'>
-						We bring a deep understanding of global IP standards especially USPTO, EUIPO, and Indian Patent Office guidelines to every project. Our team of skilled illustrators and IP professionals delivers high-precision utility patent drawings, design patent illustrations, trademark representations, and end-to-end Indian patent and industrial design filing support.
+						We bring a deep understanding of global IP standards especially USPTO, EUIPO, PCT and WIPO Patent Office guidelines to every project. Our team of skilled illustrators and IP professionals delivers high-precision utility patent drawings, design patent illustrations, trademark representations, and end-to-end patent and industrial design filing support.
 					</p>
 					<p className='about-description'>
 						Whether you're preparing a complex utility patent application or need fast-turnaround design drawings, we help you present your client’s innovation clearly, professionally, and in full compliance with international IP requirements.
